@@ -10,7 +10,7 @@ This skill is command-driven with conditional logic: after scoring, it branches 
 
 - **Adaptive coaching** that triages your bottlenecks and branches accordingly — not the same assembly line for every candidate
 - **Five-dimension scoring**: Substance, Structure, Relevance, Credibility, and Differentiation — calibrated to your seniority level
-- **Evidence-enforced feedback**: every claim tagged to source, with a hard cap on low-confidence inferences
+- **Evidence-enforced feedback**: every claim tagged to source, with automatic pause when evidence runs thin
 - **Root cause diagnosis**: scores map to underlying patterns (status anxiety, narrative hoarding, conflict avoidance, etc.) with targeted fixes
 - **Storybank with rapid-retrieval drills**: stories you can actually access under pressure, not just a well-organized filing cabinet
 - **Full mock interviews**: 4-6 question simulated interviews with holistic arc feedback, not just individual answer scoring
@@ -19,18 +19,23 @@ This skill is command-driven with conditional logic: after scoring, it branches 
 - **Differentiation as a first-class dimension**: earned secrets and spiky POVs integrated into every workflow, not an optional add-on
 - **Self-assessment calibration**: tracks the gap between how you think you're doing and how you're actually doing
 - **Outcome tracking**: correlates practice scores with real interview results to verify the coaching is working
+- **Session continuity**: COACHING_STATE document maintains your storybank, scores, patterns, and progress across sessions — works over weeks or months of prep
+- **Answer rewrites**: side-by-side before/after showing exactly what a 4-5 version of your answer looks like
+- **Interview loop awareness**: tracks which stories you've used at each company so later rounds build on earlier ones
+- **Cultural and linguistic awareness**: recognizes communication style differences and coaches adaptation, not replacement
 
 ---
 
 ## Quick Start (5 minutes)
 
-### Option 1: Claude Projects (recommended)
+### Option 1: Claude Projects (recommended for multi-week prep)
 
 1. Clone or download this repo.
 2. In Claude, create a project named `Interview Coach`.
 3. Upload `SKILL.md` and the `references/` folder to project skills/knowledge.
 4. Upload your resume (or paste resume text).
 5. Run `/kickoff`.
+6. After each session, save the COACHING_STATE document the skill generates — add it to your project knowledge. This is how the skill maintains continuity across sessions.
 
 ### Option 2: Single conversation
 
@@ -40,7 +45,7 @@ This skill is command-driven with conditional logic: after scoring, it branches 
 4. Upload or paste your resume.
 5. Run `/kickoff`.
 
-If your environment does not persist context, repeat steps 2-3 per new session.
+For multi-session use: at the end of each session, the skill generates a COACHING_STATE document. Save it. At the start of your next session, paste it after SKILL.md. The skill picks up where you left off.
 
 ---
 
@@ -76,7 +81,8 @@ Expected output:
 
 - Track selected (`Quick Prep` or `Full System`)
 - Profile snapshot (strength signals and concern areas)
-- 7-day action plan
+- Time-aware action plan (adjusted to your interview timeline)
+- Initial COACHING_STATE document (save this!)
 
 ### 2) Before an interview
 
@@ -202,14 +208,16 @@ Choose during `/kickoff`. You can switch later.
 
 ```text
 interview-coach-skill-final/
-├── SKILL.md
-├── README.md
+├── SKILL.md                            # Core skill (~240 lines): rules, rubric, session state
+├── README.md                           # This file
 └── references/
-    ├── rubrics-detailed.md
-    ├── role-drills.md
-    ├── differentiation.md
-    ├── transcript-processing.md
-    └── storybank-guide.md
+    ├── workflows.md                    # All command workflows, schemas, and cross-cutting modules
+    ├── rubrics-detailed.md             # Scoring anchors, root causes, seniority calibration
+    ├── role-drills.md                  # Role-specific drills + interviewer archetypes
+    ├── differentiation.md              # Earned secrets, spiky POVs, clarity under pressure
+    ├── transcript-processing.md        # Step-by-step transcript analysis guide
+    ├── storybank-guide.md              # Story management + rapid-retrieval drill
+    └── examples.md                     # Worked examples: scored answers, triage, rewrites
 ```
 
 ---
@@ -237,8 +245,11 @@ Yes, but it is authored for Claude skill behavior. If using another model, copy 
 **Why is the feedback direct?**
 The skill is intentionally high-candor and evidence-based. It still uses strengths-first delivery and self-reflection before critique. It also periodically checks whether the coaching is landing and adapts if not.
 
+**How does it work across multiple sessions?**
+The skill generates a COACHING_STATE document that tracks your storybank, scores, patterns, drill progression, interview outcomes, and more. Save it after each session and bring it back next time. In Claude Projects, add it to project knowledge. In single conversations, paste it at the start.
+
 **What's different about v5?**
-v5 adds adaptive triage (coaching branches based on your patterns), a 5th scoring dimension (Differentiation), root cause diagnosis, full mock interviews, drill progression with gating, post-offer negotiation, self-assessment calibration, outcome tracking, psychological readiness, signal-reading coaching, gap-handling frameworks, interviewer archetype simulation, and anti-pattern detection. The core philosophy shifted from "structured output" to "adaptive coaching" — the system now responds to what it observes, not just what you ask it.
+v5 is a ground-up rethink. Session continuity via COACHING_STATE, adaptive triage with priority-stacked decision trees, 5-dimension scoring (with Differentiation), root cause diagnosis, worked examples as calibration anchors, answer rewrites showing concrete deltas, full mock interviews with named interviewer personas, drill progression with gating, post-offer negotiation, self-assessment calibration, outcome tracking, time-aware coaching, interview loop awareness, psychological readiness, signal-reading, gap-handling, cultural/linguistic awareness, and anti-pattern detection. The core shift: from "structured output" to "adaptive coaching that works over months."
 
 ---
 

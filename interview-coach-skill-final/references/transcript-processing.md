@@ -39,6 +39,22 @@ OUTPUT: Cleaned transcript ready for analysis
 
 ---
 
+## Step 1.5: Transcript Quality Gate
+
+After cleaning, assess how much of the transcript is usable before proceeding to analysis.
+
+### Quality Assessment
+
+| Quality Level | Criteria | Action |
+|---|---|---|
+| **High** (>80% clean) | Clear speaker labels, most content recoverable, questions identifiable | Proceed with full analysis. Normal evidence confidence. |
+| **Medium** (60-80% clean) | Some garbled sections, occasional missing speaker labels, most Q&A pairs recoverable | Proceed but flag: "This transcript has gaps. I'll note where my confidence is reduced." More claims will need [E:Inference-LowConfidence] tags. |
+| **Low** (<60% clean) | Major gaps, missing speaker labels, garbled sections, can't identify all questions | Say so upfront: "This transcript has significant quality issues. I can score [N] of the [M] answers, but my confidence is low overall. Here's what I can and can't assess." Consider asking: "Do you remember any answers that are missing or garbled? Your memory + partial transcript is better than partial transcript alone." |
+
+State the quality level at the start of analysis. Don't pretend bad data is good data.
+
+---
+
 ## Step 2: Parse into Q&A Units
 
 Structure the transcript for systematic analysis.

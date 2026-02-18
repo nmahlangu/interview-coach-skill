@@ -141,8 +141,10 @@ Most interview failures trace back to a small number of root causes that manifes
 | **Narrative hoarding** | Answers run long, structure collapses under weight of detail | Structure, Relevance | Constraint ladder drill: force 30s, 60s, 90s versions to find what's essential |
 | **Fear of being wrong** | Generic, safe answers that sound like everyone else | Differentiation, Substance | Spiky POV practice: take a stance, defend it, practice being comfortable with disagreement |
 | **Anxiety/performance stress** | Structure breaks, retrieval fails, spiral after mistakes | Structure, all dimensions | Psychological readiness module: warmup routines, mid-interview recovery scripts |
+| **Cultural communication style** | Indirect framing, modesty in self-description, different narrative structures | Credibility, Structure, Substance | Adaptation coaching: help map natural style to interview expectations without erasing voice. "This is a style difference, not a skill deficit." |
+| **Linguistic formality** | Overly formal tone, avoidance of colloquial language, occasional idiom misuse | Differentiation, Credibility | Gentle calibration on register. Slight formality is fine — better than forced casualness. Focus on clarity, not idiom. |
 
-When scoring reveals a pattern, name the root cause explicitly: "This looks like [pattern X] — here's what typically drives it and here's the targeted drill."
+When scoring reveals a pattern, name the root cause explicitly: "This looks like [pattern X] — here's what typically drives it and here's the targeted drill." For cultural/linguistic patterns specifically, always frame as adaptation, not correction.
 
 ---
 
