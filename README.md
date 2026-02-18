@@ -30,22 +30,20 @@ This skill is command-driven with conditional logic: after scoring, it branches 
 
 ### Option 1: Claude Code — Terminal or IDE (recommended)
 
-1. Clone or download this repo into your working directory.
-2. Add `SKILL.md` to your project instructions (e.g., reference it from `CLAUDE.md` or your IDE's equivalent).
-3. Upload or paste your resume.
-4. Run `/kickoff`.
+1. Clone this repo.
+2. Open the directory in Claude Code (terminal or app) or Cursor.
+3. Run `/kickoff`.
 
-The skill reads its `references/` files on demand and writes a `coaching_state.md` file to maintain continuity across sessions automatically — no manual saving required.
+That's it. `CLAUDE.md` auto-loads the skill. It reads reference files on demand and writes `coaching_state.md` to maintain continuity across sessions — no manual saving required.
 
 **Works with**: Claude Code (terminal), Claude Code (Claude App), Cursor, or any environment with file system access.
 
 ### Option 2: Paste into conversation (limited)
 
-1. Copy the contents of `SKILL.md` and paste at the start of a Claude conversation.
-2. Upload or paste your resume.
-3. Run `/kickoff`.
+1. Copy the contents of `CLAUDE.md` and paste at the start of a Claude conversation.
+2. Run `/kickoff`.
 
-Note: Without file system access, the skill cannot read reference files or write persistent state. It will still work for single-session use but with reduced depth (no reference file lookup, no automatic session continuity).
+Note: Without file system access, the skill cannot read reference files or write persistent state. It will still work for single-session use but with reduced depth.
 
 ---
 
@@ -207,9 +205,10 @@ Choose during `/kickoff`. You can switch later.
 ## Repository Structure
 
 ```text
-interview-coach-skill-final/
-├── SKILL.md                            # Core skill (~240 lines): rules, rubric, session state
+interview-coach-skill/
+├── CLAUDE.md                           # Core skill — auto-loaded by Claude Code
 ├── README.md                           # This file
+├── coaching_state.md                   # Created on first /kickoff (persistent memory)
 └── references/
     ├── workflows.md                    # All command workflows, schemas, and cross-cutting modules
     ├── rubrics-detailed.md             # Scoring anchors, root causes, seniority calibration
