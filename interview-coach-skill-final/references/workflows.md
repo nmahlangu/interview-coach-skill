@@ -429,27 +429,16 @@ Storybank Menu
 6) Drill — rapid-fire retrieval practice
 ```
 
-### Required story record fields
+### Story Records
 
-- ID
-- Title
-- Primary Skill
-- Secondary Skill (optional)
-- Impact
-- Domain
-- Risk/Stakes
-- Earned Secret (the insight only this candidate could have from this experience)
-- Strength (1-5)
-- Last Used
-- Notes
+See `references/storybank-guide.md` for the full storybank format, column definitions, and skill tags. Every story record must include an Earned Secret field — see `references/differentiation.md` for the extraction protocol and validation gates.
 
 When adding or improving stories, force specificity on:
 
 - Candidate-specific contribution (not "we" — what did *you* do?)
 - Quantified impact (or explicit non-quant reason)
 - Tradeoff/constraint detail
-- Earned secret extraction: "What did you learn from this that most people in your role wouldn't know?"
-- **Earned secret validation**: Test every earned secret against three gates: (a) Is it surprising to someone outside your experience? (b) Is it backed by a specific moment, metric, or outcome? (c) Could someone who read a book about this topic say the same thing? If (c) is yes, it's not an earned secret — dig deeper. Common failure: "I learned that communication is important" is not an earned secret. "I learned that the fastest status update is a 30-second Loom video — it cut our meeting load by 60% because people stopped scheduling syncs to get context" is one.
+- Earned secret extraction and validation (see `references/differentiation.md`)
 - One-line deploy use-case
 
 ### Rapid-Retrieval Drill (`/stories drill`)
@@ -852,6 +841,7 @@ Differentiation is not optional — it is the 5th scoring dimension applied to e
 - Candidate's answers could be swapped with another qualified candidate's and no one would notice
 - Answer relies on frameworks, buzzwords, or textbook structures without personal insight
 - Story lacks an earned secret — an insight only this candidate could have from direct experience
+- During /stories: every story should have an earned secret extracted before it's considered "complete"
 
 **When triggered:**
 1. Extract earned secrets using the 5 reflection questions in `references/differentiation.md`.

@@ -148,37 +148,9 @@ When scoring reveals a pattern, name the root cause explicitly: "This looks like
 
 ---
 
-## Seniority Calibration Guide
+## Seniority Calibration
 
-Scoring expectations scale with career stage. A "4" does not mean the same thing for a new grad and a VP.
-
-### Early Career (0-3 years)
-- **Substance**: Specific examples with at least one metric. Depth may be narrow — that's expected.
-- **Structure**: Clear STAR format is sufficient. Sophisticated narrative arc not expected.
-- **Relevance**: Should answer the question asked, even if story scope is small.
-- **Credibility**: Honest about scope of contribution. Learning orientation is a credibility signal at this level.
-- **Differentiation**: Can come from intellectual curiosity, learning velocity, and unique perspectives on common experiences.
-
-### Mid-Career (4-8 years)
-- **Substance**: Quantified impact with alternatives considered. Should show decision-making, not just execution.
-- **Structure**: Smooth narrative flow with clear transitions. Should be able to compress and expand on demand.
-- **Relevance**: Story selection should be strategic — right story for the right question, not just "my best story."
-- **Credibility**: Clear individual contribution with team context. Third-party validation expected.
-- **Differentiation**: Genuine earned secrets from hands-on work. Should sound like a practitioner, not a student of best practices.
-
-### Senior/Lead (8-15 years)
-- **Substance**: Systems-level thinking — second-order effects, organizational impact, strategic framing.
-- **Structure**: Sophisticated narrative control. Can zoom in/out, adjust level of detail to audience.
-- **Relevance**: Answers should address both the literal question and the meta-question (what they're really evaluating).
-- **Credibility**: Comfortable with ambiguity in outcomes. Acknowledges what they'd do differently with hindsight.
-- **Differentiation**: Insights that reshape how the interviewer thinks about the problem. Pattern recognition across multiple experiences.
-
-### Executive (15+ years)
-- **Substance**: Business-level impact with P&L awareness, cross-functional influence, portfolio thinking.
-- **Structure**: Effortless — structure is invisible, feels like a conversation, but every element is deliberate.
-- **Relevance**: Every answer subtly reinforces a leadership thesis. Nothing is wasted.
-- **Credibility**: Radical ownership including failures. Specific about what they learned and how they evolved.
-- **Differentiation**: Coherent leadership philosophy backed by pattern recognition across many contexts. Unmistakable point of view on how to build/lead/create.
+See SKILL.md for seniority band definitions (Early Career, Mid-Career, Senior/Lead, Executive). The bands there define what a "4" means at each level. Use those as your calibration reference when scoring.
 
 ---
 
