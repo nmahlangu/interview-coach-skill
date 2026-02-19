@@ -50,7 +50,7 @@ This creates the file that Claude Code auto-loads. (`SKILL.md` is the source —
 
 **Start coaching:**
 
-Open the folder in Claude Code (terminal, Claude App, or Cursor) and run `/kickoff`.
+Open the folder in Claude Code (terminal, Claude App, or Cursor) and say `kickoff`.
 
 The skill reads its reference files on demand and writes a `coaching_state.md` file to maintain continuity across sessions — no manual saving required.
 
@@ -59,7 +59,7 @@ The skill reads its reference files on demand and writes a `coaching_state.md` f
 ### Option 2: Paste into conversation (limited)
 
 1. Copy the contents of `SKILL.md` and paste at the start of a Claude conversation.
-2. Run `/kickoff`.
+2. Say `kickoff`.
 
 Note: Without file system access, the skill cannot read reference files or write persistent state. It will still work for single-session use but with reduced depth.
 
@@ -69,19 +69,19 @@ Note: Without file system access, the skill cannot read reference files or write
 
 | Command | Purpose | Typical Output |
 |---|---|---|
-| `/kickoff` | Setup profile, track, and preferences | Kickoff summary + first 7-day plan |
-| `/prep [company]` | Build role-specific prep brief (format-aware, culture-aware) | Format guidance, culture read, competencies, predicted Qs, story mapping |
-| `/analyze` | Analyze transcript with triage-based coaching | Per-answer 5-dimension scoring + decision tree + interview delta |
-| `/practice` | Run drill rounds (with progression gating) | Round debrief + self-assessment delta + targeted adjustment |
-| `/mock [format]` | Full simulated interview (4-6 Qs) | Holistic arc feedback, signal-reading notes, energy trajectory |
-| `/stories` | Build/manage storybank + rapid-retrieval drill | Story table + earned secrets + gap analysis + retrieval drill |
-| `/concerns` | Anticipate interviewer concerns | Concern-counter-evidence map |
-| `/questions` | Generate interviewer questions | 5 tailored, non-generic questions |
-| `/hype` | Pre-interview confidence + psychological warmup | 60-second reel + 3x3 sheet + focus cue |
-| `/thankyou` | Post-interview follow-up drafts | Thank-you note + variants |
-| `/progress` | Trends, self-calibration, outcome tracking | Self-assessment delta + outcome correlation + coaching meta-check |
-| `/negotiate` | Post-offer negotiation coaching | Offer analysis + strategy + scripts + specific language |
-| `/help` | Show command menu | Full command list |
+| `kickoff` | Setup profile, track, and preferences | Kickoff summary + first 7-day plan |
+| `prep [company]` | Build role-specific prep brief (format-aware, culture-aware) | Format guidance, culture read, competencies, predicted Qs, story mapping |
+| `analyze` | Analyze transcript with triage-based coaching | Per-answer 5-dimension scoring + decision tree + interview delta |
+| `practice` | Run drill rounds (with progression gating) | Round debrief + self-assessment delta + targeted adjustment |
+| `mock [format]` | Full simulated interview (4-6 Qs) | Holistic arc feedback, signal-reading notes, energy trajectory |
+| `stories` | Build/manage storybank + rapid-retrieval drill | Story table + earned secrets + gap analysis + retrieval drill |
+| `concerns` | Anticipate interviewer concerns | Concern-counter-evidence map |
+| `questions` | Generate interviewer questions | 5 tailored, non-generic questions |
+| `hype` | Pre-interview confidence + psychological warmup | 60-second reel + 3x3 sheet + focus cue |
+| `thankyou` | Post-interview follow-up drafts | Thank-you note + variants |
+| `progress` | Trends, self-calibration, outcome tracking | Self-assessment delta + outcome correlation + coaching meta-check |
+| `negotiate` | Post-offer negotiation coaching | Offer analysis + strategy + scripts + specific language |
+| `help` | Show command menu | Full command list |
 
 ---
 
@@ -90,7 +90,7 @@ Note: Without file system access, the skill cannot read reference files or write
 ### 1) Initial setup
 
 ```text
-/kickoff
+kickoff
 ```
 
 Expected output:
@@ -103,7 +103,7 @@ Expected output:
 ### 2) Before an interview
 
 ```text
-/prep Stripe
+prep Stripe
 ```
 
 Then provide:
@@ -124,7 +124,7 @@ Expected output:
 ### 3) After an interview
 
 ```text
-/analyze
+analyze
 ```
 
 Then paste transcript text.
@@ -141,19 +141,19 @@ Expected output:
 ### 4) Drill practice
 
 ```text
-/practice
+practice
 ```
 
 Drills (in progression order — advance when you meet gating thresholds):
 
-- `/practice ladder` — Constraint drills (30s, 60s, 90s, 3min)
-- `/practice pushback` — Handle skepticism and interruption
-- `/practice pivot` — Redirect when questions don't match prep
-- `/practice gap` — Handle "I don't have an example" moments
-- `/practice role` — Role-specific specialist scrutiny
-- `/practice panel` — Multiple interviewer personas
-- `/practice stress` — High-pressure simulation
-- `/practice retrieval` — Rapid-fire story matching
+- `practice ladder` — Constraint drills (30s, 60s, 90s, 3min)
+- `practice pushback` — Handle skepticism and interruption
+- `practice pivot` — Redirect when questions don't match prep
+- `practice gap` — Handle "I don't have an example" moments
+- `practice role` — Role-specific specialist scrutiny
+- `practice panel` — Multiple interviewer personas
+- `practice stress` — High-pressure simulation
+- `practice retrieval` — Rapid-fire story matching
 
 Expected output each round:
 
@@ -167,7 +167,7 @@ Expected output each round:
 ### 5) Full mock interview
 
 ```text
-/mock behavioral Stripe
+mock behavioral Stripe
 ```
 
 Runs a complete 4-6 question interview simulation with holistic feedback on:
@@ -181,7 +181,7 @@ Runs a complete 4-6 question interview simulation with holistic feedback on:
 ### 6) Post-offer negotiation
 
 ```text
-/negotiate
+negotiate
 ```
 
 Then provide offer details, competing offers, and ideal outcome. Get:
@@ -216,7 +216,7 @@ Best when running a multi-week search.
 - Post-offer negotiation coaching
 - Drill progression with gating thresholds
 
-Choose during `/kickoff`. You can switch later.
+Choose during `kickoff`. You can switch later.
 
 ---
 
@@ -226,7 +226,7 @@ Choose during `/kickoff`. You can switch later.
 interview-coach-skill/
 ├── SKILL.md                            # Core skill — copy to CLAUDE.md to activate
 ├── README.md                           # This file
-├── coaching_state.md                   # Created on first /kickoff (persistent memory)
+├── coaching_state.md                   # Created on first kickoff (persistent memory)
 └── references/
     ├── workflows.md                    # All command workflows, schemas, and cross-cutting modules
     ├── rubrics-detailed.md             # Scoring anchors, root causes, seniority calibration
@@ -242,12 +242,12 @@ interview-coach-skill/
 ## Best Results
 
 1. Share a real resume (not a high-level summary).
-2. Include a full job description for `/prep` — and the interview format if you know it.
-3. Use real transcripts for `/analyze`. The more you give it, the better the triage.
-4. Keep a living storybank with `/stories`. Extract earned secrets for every story.
-5. Run `/progress` weekly — it tracks your self-assessment accuracy, not just scores.
+2. Include a full job description for `prep` — and the interview format if you know it.
+3. Use real transcripts for `analyze`. The more you give it, the better the triage.
+4. Keep a living storybank with `stories`. Extract earned secrets for every story.
+5. Run `progress` weekly — it tracks your self-assessment accuracy, not just scores.
 6. After real interviews, log outcomes. The system correlates practice scores with real results.
-7. Run `/mock` before important interviews. Individual drills build skills; mocks test the full arc.
+7. Run `mock` before important interviews. Individual drills build skills; mocks test the full arc.
 
 ---
 

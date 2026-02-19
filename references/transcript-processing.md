@@ -120,7 +120,7 @@ After scanning, include detected anti-patterns in the analysis output. Each dete
 
 ## Step 3: Multi-Lens Scoring
 
-Run the parsed transcript through evaluative lenses. **Important**: Which lenses you run depends on the post-scoring decision tree in `references/workflows.md` (under `/analyze`). If a primary bottleneck is identified after initial scoring, scope the analysis accordingly rather than running all four lenses mechanically. Always apply the evidence tagging standard from SKILL.md — if you hit 3+ `[E:Inference-LowConfidence]` claims, pause and request data before continuing.
+Run the parsed transcript through evaluative lenses. **Important**: Which lenses you run depends on the post-scoring decision tree in `references/workflows.md` (under `analyze`). If a primary bottleneck is identified after initial scoring, scope the analysis accordingly rather than running all four lenses mechanically. Always apply the evidence tagging standard from SKILL.md — if you hit 3+ `[E:Inference-LowConfidence]` claims, pause and request data before continuing.
 
 ### Lens 1: Hiring Manager Perspective
 

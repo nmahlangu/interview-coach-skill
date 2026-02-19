@@ -1,6 +1,6 @@
 # Differentiation: Escaping the AI-Polish Middle
 
-**This is not an optional add-on.** Differentiation is the 5th scoring dimension (scored 1-5 on every answer during /analyze) and the single biggest factor separating Hire from Strong Hire in competitive processes.
+**This is not an optional add-on.** Differentiation is the 5th scoring dimension (scored 1-5 on every answer during analyze) and the single biggest factor separating Hire from Strong Hire in competitive processes.
 
 When everyone preps with AI, everyone sounds the same: safe, polished, slightly robotic. The baseline has inflated. What used to be impressive is now table stakes.
 
@@ -12,11 +12,11 @@ Your edge isn't "using AI." Your edge is showing things AI can't fake:
 ### When Differentiation Coaching Fires
 
 This protocol activates automatically when:
-- Differentiation score < 3 on any answer during /analyze
+- Differentiation score < 3 on any answer during analyze
 - Candidate's answers could be swapped with another qualified candidate's
 - Answer relies on frameworks, buzzwords, or textbook structures without personal insight
 - Story lacks an earned secret
-- During /stories: every story should have an earned secret extracted before it's considered "complete"
+- During stories: every story should have an earned secret extracted before it's considered "complete"
 
 ---
 
@@ -206,10 +206,10 @@ Then test: "You're at the 90-second mark, and I interrupt with: 'Can you give me
 
 Differentiation is woven into the core workflows, not bolted on:
 
-- **`/analyze`**: Every answer is scored on Differentiation (1-5). Scores < 3 trigger this protocol.
-- **`/stories`**: Every storybank entry requires an Earned Secret field. Stories without one are flagged as incomplete.
-- **`/practice`**: Drills include differentiation coaching — "That answer was correct but generic. What's the version only you could give?"
-- **`/prep`**: Prep briefs include an "Earned secret to deploy" field in positioning.
-- **`/mock`**: Post-mock debrief includes a differentiation analysis across the full interview arc.
+- **`analyze`**: Every answer is scored on Differentiation (1-5). Scores < 3 trigger this protocol.
+- **`stories`**: Every storybank entry requires an Earned Secret field. Stories without one are flagged as incomplete.
+- **`practice`**: Drills include differentiation coaching — "That answer was correct but generic. What's the version only you could give?"
+- **`prep`**: Prep briefs include an "Earned secret to deploy" field in positioning.
+- **`mock`**: Post-mock debrief includes a differentiation analysis across the full interview arc.
 
 The goal: make it structurally impossible to ignore differentiation. It's not something you "add later" — it's baked into every answer from the start.

@@ -66,7 +66,7 @@ These examples show what good skill output looks like. Use them as calibration a
 
 ---
 
-## Example 2: Complete /analyze Triage Decision in Action
+## Example 2: Complete analyze Triage Decision in Action
 
 **Context**: Mid-career PM, behavioral screen at a Series B startup. 6 questions in transcript.
 

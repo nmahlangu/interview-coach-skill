@@ -25,13 +25,13 @@ cp SKILL.md CLAUDE.md
 
 ---
 
-## Test 1: /kickoff
+## Test 1: kickoff
 
 **Goal**: Initialize profile, verify session state creation.
 
 **Type**:
 ```
-/kickoff
+kickoff
 ```
 
 **Provide when asked** (one at a time — the skill should ask sequentially):
@@ -64,13 +64,13 @@ Gaps: No people management title (IC track), limited international market experi
 
 ---
 
-## Test 2: /stories
+## Test 2: stories
 
 **Goal**: Build initial storybank, test earned secret extraction.
 
 **Type**:
 ```
-/stories
+stories
 ```
 
 **Select**: `Add`
@@ -97,13 +97,13 @@ At Shopify, I noticed our merchant analytics dashboard had high adoption (150K m
 
 ---
 
-## Test 3: /prep [company]
+## Test 3: prep [company]
 
 **Goal**: Test company prep with format awareness and story mapping.
 
 **Type**:
 ```
-/prep Stripe
+prep Stripe
 ```
 
 **Provide when asked**:
@@ -134,13 +134,13 @@ Stripe values: Move with urgency. Be meticulous. Think rigorously.
 
 ---
 
-## Test 4: /analyze
+## Test 4: analyze
 
 **Goal**: Test transcript analysis, triage decision tree, and scoring.
 
 **Type**:
 ```
-/analyze
+analyze
 ```
 
 **Wait for the self-assessment question, then respond**:
@@ -195,13 +195,13 @@ Candidate: We kept some individual developer features running and didn't fully s
 
 ---
 
-## Test 5: /practice
+## Test 5: practice
 
 **Goal**: Test drill progression and self-assessment calibration.
 
 **Type**:
 ```
-/practice ladder
+practice ladder
 ```
 
 **When given a question, respond with**:
@@ -227,13 +227,13 @@ I'd rate that a 4 on Substance, 3.5 on Structure, 4 on Relevance, 3.5 on Credibi
 
 ---
 
-## Test 6: /mock behavioral Stripe
+## Test 6: mock behavioral Stripe
 
 **Goal**: Test full mock interview simulation.
 
 **Type**:
 ```
-/mock behavioral Stripe
+mock behavioral Stripe
 ```
 
 **Important**: The skill should deliver 4-6 questions one at a time with NO feedback between questions. Answer each one naturally — use your storybank stories and improvise. Keep answers 60-90 seconds (roughly 150-200 words each).
@@ -253,13 +253,13 @@ I'd rate that a 4 on Substance, 3.5 on Structure, 4 on Relevance, 3.5 on Credibi
 
 ---
 
-## Test 7: /concerns
+## Test 7: concerns
 
 **Goal**: Test concern anticipation.
 
 **Type**:
 ```
-/concerns
+concerns
 ```
 
 **When asked what concerns you expect, say**:
@@ -272,13 +272,13 @@ They'll probably worry about my lack of payments domain experience and that I've
 
 ---
 
-## Test 8: /questions
+## Test 8: questions
 
 **Goal**: Test interviewer question generation.
 
 **Type**:
 ```
-/questions
+questions
 ```
 
 **Screenshot opportunities**:
@@ -286,13 +286,13 @@ They'll probably worry about my lack of payments domain experience and that I've
 
 ---
 
-## Test 9: /hype
+## Test 9: hype
 
 **Goal**: Test pre-interview boost with psychological warmup.
 
 **Type**:
 ```
-/hype
+hype
 ```
 
 **Screenshot opportunities**:
@@ -303,13 +303,13 @@ They'll probably worry about my lack of payments domain experience and that I've
 
 ---
 
-## Test 10: /progress
+## Test 10: progress
 
 **Goal**: Test trend review and self-assessment calibration across the session.
 
 **Type**:
 ```
-/progress
+progress
 ```
 
 **When asked for self-reflection, say**:
@@ -330,13 +330,13 @@ I think I'm at about a 3.5 on Substance, 3 on Structure, 3.5 on Relevance, 3 on 
 
 ---
 
-## Test 11: /negotiate
+## Test 11: negotiate
 
 **Goal**: Test post-offer negotiation coaching.
 
 **Type**:
 ```
-/negotiate
+negotiate
 ```
 
 **Provide when asked**:
@@ -361,13 +361,13 @@ No competing offers, but I'm currently employed and not in a rush.
 
 ---
 
-## Test 12: /thankyou
+## Test 12: thankyou
 
 **Goal**: Test follow-up generation.
 
 **Type**:
 ```
-/thankyou
+thankyou
 ```
 
 **Provide context**:
@@ -387,7 +387,7 @@ After completing all tests, verify:
 
 - [ ] `coaching_state.md` exists and contains all session data
 - [ ] Storybank has both stories with earned secrets
-- [ ] Score history shows entries from /analyze, /practice, and /mock
+- [ ] Score history shows entries from analyze, practice, and mock
 - [ ] Session log shows all commands run
 - [ ] Drill progression reflects current stage
 - [ ] Interview loop for Stripe is tracked

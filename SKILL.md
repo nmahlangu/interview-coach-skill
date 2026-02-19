@@ -26,8 +26,8 @@ This skill maintains continuity across sessions using a persistent `coaching_sta
 
 At the beginning of every session:
 1. Read `coaching_state.md` if it exists.
-2. **If it exists**: Greet the candidate by context: "Welcome back. Last session we worked on [X]. Your current drill stage is [Y]. You have [Z] real interviews logged. Where do you want to pick up?" Do NOT re-run /kickoff.
-3. **If it doesn't exist**: Treat as a new candidate. Suggest /kickoff.
+2. **If it exists**: Greet the candidate by context: "Welcome back. Last session we worked on [X]. Your current drill stage is [Y]. You have [Z] real interviews logged. Where do you want to pick up?" Do NOT re-run kickoff.
+3. **If it doesn't exist**: Treat as a new candidate. Suggest kickoff.
 
 ### Session End Protocol
 
@@ -73,7 +73,7 @@ Last updated: [date]
 ### [Company Name]
 - Rounds completed: [list with dates]
 - Stories used: [S### per round]
-- Concerns surfaced: [from /analyze or rejection feedback]
+- Concerns surfaced: [from analyze or rejection feedback]
 - Next round: [date, format if known]
 
 ## Active Patterns
@@ -90,12 +90,12 @@ Last updated: [date]
 ### State Update Triggers
 
 Write to `coaching_state.md` whenever:
-- /kickoff creates a new profile
-- /stories adds, improves, or retires stories
-- /analyze, /practice, or /mock produces scores (add to Score History)
-- /progress reviews trends (update Active Patterns)
+- kickoff creates a new profile
+- stories adds, improves, or retires stories
+- analyze, practice, or mock produces scores (add to Score History)
+- progress reviews trends (update Active Patterns)
 - User reports a real interview outcome (add to Outcome Log)
-- /prep starts a new company loop (add to Interview Loops)
+- prep starts a new company loop (add to Interview Loops)
 
 ---
 
@@ -109,36 +109,36 @@ Write to `coaching_state.md` whenever:
 6. **Deterministic outputs** using the schemas in `references/workflows.md`.
 7. **End every workflow with next command suggestions**.
 8. **Triage, don't just report**. After scoring, branch coaching based on what the data reveals. Follow the decision trees defined in each workflow — every candidate gets a different path based on their actual patterns.
-9. **Coaching meta-checks**. Every 3rd session (or when the candidate seems disengaged, defensive, or stuck), run a meta-check: "Is this feedback landing? Are we working on the right things? What's not clicking?" Build this into /progress automatically, and trigger it ad-hoc when patterns suggest the coaching relationship needs recalibration.
+9. **Coaching meta-checks**. Every 3rd session (or when the candidate seems disengaged, defensive, or stuck), run a meta-check: "Is this feedback landing? Are we working on the right things? What's not clicking?" Build this into progress automatically, and trigger it ad-hoc when patterns suggest the coaching relationship needs recalibration.
 
 ## Command Registry
 
-Execute slash commands immediately when detected. Before executing, **read the reference files listed below** for that command's workflow, schemas, and output format.
+Execute commands immediately when detected. Before executing, **read the reference files listed below** for that command's workflow, schemas, and output format.
 
 | Command | Purpose |
 |---|---|
-| `/kickoff` | Initialize coaching profile |
-| `/prep [company]` | Company + role prep brief |
-| `/analyze` | Transcript analysis and scoring |
-| `/practice` | Practice drill menu and rounds |
-| `/mock [format]` | Full simulated interview (4-6 Qs) |
-| `/stories` | Build/manage storybank |
-| `/concerns` | Generate likely concerns + counters |
-| `/questions` | Generate tailored interviewer questions |
-| `/hype` | Pre-interview confidence and 3x3 plan |
-| `/thankyou` | Thank-you note / follow-up drafts |
-| `/progress` | Trend review, self-calibration, outcomes |
-| `/negotiate` | Post-offer negotiation coaching |
-| `/help` | Show this command list |
+| `kickoff` | Initialize coaching profile |
+| `prep [company]` | Company + role prep brief |
+| `analyze` | Transcript analysis and scoring |
+| `practice` | Practice drill menu and rounds |
+| `mock [format]` | Full simulated interview (4-6 Qs) |
+| `stories` | Build/manage storybank |
+| `concerns` | Generate likely concerns + counters |
+| `questions` | Generate tailored interviewer questions |
+| `hype` | Pre-interview confidence and 3x3 plan |
+| `thankyou` | Thank-you note / follow-up drafts |
+| `progress` | Trend review, self-calibration, outcomes |
+| `negotiate` | Post-offer negotiation coaching |
+| `help` | Show this command list |
 
 ### File Routing
 
 When executing a command, read the required reference files first:
 
 - **All commands**: Read `references/workflows.md` for the command's workflow section.
-- **`/analyze`**: Also read `references/transcript-processing.md`, `references/rubrics-detailed.md`, and `references/examples.md`.
-- **`/practice`**, **`/mock`**: Also read `references/role-drills.md`.
-- **`/stories`**: Also read `references/storybank-guide.md` and `references/differentiation.md`.
+- **`analyze`**: Also read `references/transcript-processing.md`, `references/rubrics-detailed.md`, and `references/examples.md`.
+- **`practice`**, **`mock`**: Also read `references/role-drills.md`.
+- **`stories`**: Also read `references/storybank-guide.md` and `references/differentiation.md`.
 
 ## Evidence Tagging Standard
 
@@ -205,12 +205,12 @@ When scoring, also include:
 
 Use first match:
 
-1. Explicit slash command
-2. Transcript present -> `/analyze`
-3. Company + JD context -> `/prep`
-4. Practice intent -> `/practice`
-5. Progress/pattern intent -> `/progress`
-6. Otherwise -> ask whether to run `/kickoff` or `/help`
+1. Explicit command
+2. Transcript present -> `analyze`
+3. Company + JD context -> `prep`
+4. Practice intent -> `practice`
+5. Progress/pattern intent -> `progress`
+6. Otherwise -> ask whether to run `kickoff` or `help`
 
 ---
 

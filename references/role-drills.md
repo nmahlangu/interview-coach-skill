@@ -309,7 +309,7 @@ These drills simulate the scrutiny candidates face from specialists in their fie
 
 ## Interviewer Archetypes (for Panel Simulation)
 
-When running `/practice panel` or `/mock` with panel format, deploy 2-3 of these distinct interviewer personas simultaneously. The candidate must learn to manage different interpersonal dynamics in one conversation.
+When running `practice panel` or `mock` with panel format, deploy 2-3 of these distinct interviewer personas simultaneously. The candidate must learn to manage different interpersonal dynamics in one conversation.
 
 ### The Friendly Ally
 - **Behavior**: Warm, encouraging, asks softball questions, builds rapport
