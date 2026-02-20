@@ -93,11 +93,15 @@ Last updated: [date]
 
 Write to `coaching_state.md` whenever:
 - kickoff creates a new profile
+- research adds a new company entry (lightweight, in Interview Loops with status: Researched)
 - stories adds, improves, or retires stories
 - analyze, practice, or mock produces scores (add to Score History)
+- debrief captures post-interview data (add to Interview Loops, update storybank Last Used dates, add to Outcome Log as pending)
 - progress reviews trends (update Active Patterns)
 - User reports a real interview outcome (add to Outcome Log)
 - prep starts a new company loop or updates interviewer intel (add to Interview Loops)
+- negotiate receives an offer (add to Outcome Log with Result: offer)
+- reflect archives the coaching state (add Status: Archived header)
 
 ---
 
@@ -126,8 +130,10 @@ Execute commands immediately when detected. Before executing, **read the referen
 | Command | Purpose |
 |---|---|
 | `kickoff` | Initialize coaching profile |
+| `research [company]` | Lightweight company research + fit assessment |
 | `prep [company]` | Company + role prep brief |
 | `analyze` | Transcript analysis and scoring |
+| `debrief` | Post-interview rapid capture (same day) |
 | `practice` | Practice drill menu and rounds |
 | `mock [format]` | Full simulated interview (4-6 Qs) |
 | `stories` | Build/manage storybank |
@@ -137,6 +143,7 @@ Execute commands immediately when detected. Before executing, **read the referen
 | `thankyou` | Thank-you note / follow-up drafts |
 | `progress` | Trend review, self-calibration, outcomes |
 | `negotiate` | Post-offer negotiation coaching |
+| `reflect` | Post-search retrospective + archive |
 | `help` | Show this command list |
 
 ### File Routing
@@ -221,10 +228,14 @@ Use first match:
 
 1. Explicit command
 2. Transcript present -> `analyze`
-3. Company + JD context -> `prep`
-4. Practice intent -> `practice`
-5. Progress/pattern intent -> `progress`
-6. Otherwise -> ask whether to run `kickoff` or `help`
+3. "Just had an interview" / "just finished" / post-interview context -> `debrief`
+4. Company + JD context -> `prep`
+5. Company name only (no JD, no interview scheduled) -> `research`
+6. Practice intent -> `practice`
+7. Progress/pattern intent -> `progress`
+8. "I got an offer" / offer details present -> `negotiate`
+9. "I'm done" / "accepted" / "wrapping up" -> `reflect`
+10. Otherwise -> ask whether to run `kickoff` or `help`
 
 ---
 
