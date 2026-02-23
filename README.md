@@ -1,4 +1,4 @@
-# Interview Coach v5
+# Interview Coach
 
 A high-rigor Claude skill for interview coaching — not just prep. It adapts to what you actually need based on your patterns, not a one-size-fits-all assembly line.
 
@@ -10,51 +10,44 @@ This skill is command-driven with conditional logic: after scoring, it branches 
 
 - **Adaptive coaching** that triages your bottlenecks and branches accordingly — not the same assembly line for every candidate
 - **Five-dimension scoring**: Substance, Structure, Relevance, Credibility, and Differentiation — calibrated to your seniority level
-- **Evidence-enforced feedback**: every claim tagged to source, with automatic pause when evidence runs thin
+- **Evidence-enforced feedback**: every claim grounded in a real source, with automatic pause when evidence runs thin
 - **Root cause diagnosis**: scores map to underlying patterns (status anxiety, narrative hoarding, conflict avoidance, etc.) with targeted fixes
 - **Storybank with rapid-retrieval drills**: stories you can actually access under pressure, not just a well-organized filing cabinet
-- **Full mock interviews**: 4-6 question simulated interviews with holistic arc feedback, not just individual answer scoring
+- **Full mock interviews**: 4-6 question simulated interviews with holistic arc feedback — behavioral, system design, case study, panel, and technical+behavioral mix formats
 - **Psychological readiness**: pre-interview routines, mid-interview recovery, and post-interview processing
 - **Post-offer negotiation coaching**: scripts, strategy, and specific language for compensation conversations
 - **Differentiation as a first-class dimension**: earned secrets and spiky POVs integrated into every workflow, not an optional add-on
 - **Self-assessment calibration**: tracks the gap between how you think you're doing and how you're actually doing
 - **Outcome tracking**: correlates practice scores with real interview results to verify the coaching is working
-- **Session continuity**: persistent `coaching_state.md` file maintains your storybank, scores, patterns, and progress across sessions — works over weeks or months of prep
+- **Session continuity**: persistent `coaching_state.md` file maintains your storybank, scores, patterns, and progress across sessions — auto-saved, works over weeks or months of prep
 - **Answer rewrites**: side-by-side before/after showing exactly what a 4-5 version of your answer looks like
 - **Interview loop awareness**: tracks which stories you've used at each company so later rounds build on earlier ones
+- **Interviewer intelligence**: per-interviewer research from LinkedIn profiles — focus areas, rapport hooks, story recommendations
+- **Post-interview debrief**: rapid same-day capture while details are fresh, even without a transcript
+- **Company research**: lightweight fit assessment before committing to full prep
+- **Post-search retrospective**: archive your coaching journey and extract transferable skills when a search ends
 - **Cultural and linguistic awareness**: recognizes communication style differences and coaches adaptation, not replacement
 
 ---
 
 ## Quick Start
 
-### Option 1: Claude Code — Terminal or IDE (recommended)
+### Option 1: Open in Claude Code on Desktop (recommended)
 
-**Get the files** — either way works:
+The simplest path. Open this repo directly from Claude Code on Desktop:
 
-```bash
-# Clone with git
-git clone https://github.com/noamseg/interview-coach-skill.git
-cd interview-coach-skill
-```
-
-Or: click the green **Code** button on GitHub → **Download ZIP**, unzip it, and open the folder.
-
-**Activate the skill:**
+1. Clone or download this repo.
+2. Rename the skill file so Claude Code auto-loads it:
 
 ```bash
-cp SKILL.md CLAUDE.md
+mv SKILL.md CLAUDE.md
 ```
 
-This creates the file that Claude Code auto-loads. (`SKILL.md` is the source — `CLAUDE.md` is your working copy.)
-
-**Start coaching:**
-
-Open the folder in Claude Code (terminal, Claude App, or Cursor) and say `kickoff`.
+3. Open the folder in Claude Code on Desktop and say `kickoff`.
 
 The skill reads its reference files on demand and writes a `coaching_state.md` file to maintain continuity across sessions — no manual saving required.
 
-**Works with**: Claude Code (terminal), Claude Code (Claude App), Cursor, or any environment with file system access.
+**Also works with**: Claude Code (terminal), Cursor, or any environment with file system access.
 
 ### Option 2: Paste into conversation (limited)
 
@@ -69,19 +62,22 @@ Note: Without file system access, the skill cannot read reference files or write
 
 | Command | Purpose | Typical Output |
 |---|---|---|
-| `kickoff` | Setup profile, track, and preferences | Kickoff summary + first 7-day plan |
-| `prep [company]` | Build role-specific prep brief (format-aware, culture-aware) | Format guidance, culture read, competencies, predicted Qs, story mapping |
+| `kickoff` | Setup profile, track, and preferences | Kickoff summary + time-aware action plan |
+| `research [company]` | Lightweight company research + fit assessment | Company snapshot, culture signals, fit assessment |
+| `prep [company]` | Build role-specific prep brief (format-aware, culture-aware) | Format guidance, culture read, interviewer intelligence, competencies, predicted Qs, story mapping |
 | `analyze` | Analyze transcript with triage-based coaching | Per-answer 5-dimension scoring + decision tree + interview delta |
+| `debrief` | Post-interview rapid capture (same day) | Questions recalled, interviewer signals, stories used, coaching state updates |
 | `practice` | Run drill rounds (with progression gating) | Round debrief + self-assessment delta + targeted adjustment |
-| `mock [format]` | Full simulated interview (4-6 Qs) | Holistic arc feedback, signal-reading notes, energy trajectory |
+| `mock [format]` | Full simulated interview (4-6 Qs) — behavioral, system design, case study, panel, technical+behavioral mix | Holistic arc feedback, signal-reading notes, energy trajectory |
 | `stories` | Build/manage storybank + rapid-retrieval drill | Story table + earned secrets + gap analysis + retrieval drill |
 | `concerns` | Anticipate interviewer concerns | Concern-counter-evidence map |
 | `questions` | Generate interviewer questions | 5 tailored, non-generic questions |
-| `hype` | Pre-interview confidence + psychological warmup | 60-second reel + 3x3 sheet + focus cue |
+| `hype` | Pre-interview confidence + psychological warmup | 60-second reel + 3x3 sheet + focus cue + recovery playbook |
 | `thankyou` | Post-interview follow-up drafts | Thank-you note + variants |
 | `progress` | Trends, self-calibration, outcome tracking | Self-assessment delta + outcome correlation + coaching meta-check |
 | `negotiate` | Post-offer negotiation coaching | Offer analysis + strategy + scripts + specific language |
-| `help` | Show command menu | Full command list |
+| `reflect` | Post-search retrospective + archive | Journey arc, breakthroughs, transferable skills, archived state |
+| `help` | Show command menu (context-aware) | Full command list + recommended next based on coaching state |
 
 ---
 
@@ -97,10 +93,22 @@ Expected output:
 
 - Track selected (`Quick Prep` or `Full System`)
 - Profile snapshot (strength signals and concern areas)
+- Interview readiness assessment
 - Time-aware action plan (adjusted to your interview timeline)
-- Initial COACHING_STATE document (save this!)
 
-### 2) Before an interview
+### 2) Company research (before committing to prep)
+
+```text
+research Notion
+```
+
+Expected output:
+
+- Company snapshot (stage, size, culture signals)
+- Fit assessment against your profile
+- "If you decide to apply" next steps
+
+### 3) Before an interview
 
 ```text
 prep Stripe
@@ -114,6 +122,8 @@ Then provide:
 
 Expected output:
 
+- `Interview Format` (with format-specific coaching boundaries)
+- `Company Culture Read`
 - `Interviewer Intelligence` (if profile links provided — per-interviewer lens, focus areas, rapport hooks, story recommendations)
 - `What They Optimize For`
 - `Your Best Positioning`
@@ -121,8 +131,22 @@ Expected output:
 - `Predicted Questions (7-10)`
 - `Story Mapping`
 - `Questions To Ask Them`
+- `Day-Of Cheat Sheet`
 
-### 3) After an interview
+### 4) Right after an interview
+
+```text
+debrief
+```
+
+Rapid capture while details are fresh — works with or without a transcript. Get:
+
+- Questions recalled and reconstructed answers
+- Interviewer signals observed (engagement, skepticism, interest)
+- Stories used (auto-updates storybank `Last Used` dates)
+- Coaching state updated for the next session
+
+### 5) Analyzing a transcript
 
 ```text
 analyze
@@ -134,12 +158,13 @@ Expected output:
 
 - Per-answer score blocks
 - `Scorecard`
+- `Triage Decision` (data-driven coaching path based on your patterns)
 - `What Is Working`
 - `Top 3 Gaps To Close`
 - `Storybank Changes`
 - `Priority Move (Next 72 Hours)`
 
-### 4) Drill practice
+### 6) Drill practice
 
 ```text
 practice
@@ -154,7 +179,11 @@ Drills (in progression order — advance when you meet gating thresholds):
 - `practice role` — Role-specific specialist scrutiny
 - `practice panel` — Multiple interviewer personas
 - `practice stress` — High-pressure simulation
-- `practice retrieval` — Rapid-fire story matching
+- `practice technical` — Thinking out loud, clarification-seeking, tradeoff articulation (system design / case study / mixed format only)
+
+Standalone (not gated):
+
+- `practice retrieval` — Rapid-fire story matching under time pressure
 
 Expected output each round:
 
@@ -165,13 +194,13 @@ Expected output each round:
 - `Self-Assessment Delta`
 - `Next Round Adjustment`
 
-### 5) Full mock interview
+### 7) Full mock interview
 
 ```text
 mock behavioral Stripe
 ```
 
-Runs a complete 4-6 question interview simulation with holistic feedback on:
+Runs a complete 4-6 question interview simulation. Formats: behavioral, system design, case study, panel, technical+behavioral mix. Holistic feedback on:
 
 - Overall impression and hiring signal
 - Energy trajectory and pacing across the full arc
@@ -179,7 +208,7 @@ Runs a complete 4-6 question interview simulation with holistic feedback on:
 - Signal-reading (did you adapt to interviewer cues?)
 - Per-question scoring + holistic patterns only visible across the full session
 
-### 6) Post-offer negotiation
+### 8) Post-offer negotiation
 
 ```text
 negotiate
@@ -200,6 +229,7 @@ Then provide offer details, competing offers, and ideal outcome. Get:
 
 Best when interview timeline is short.
 
+- Company research
 - Prep brief
 - Focused transcript analysis
 - Immediate next actions
@@ -212,10 +242,13 @@ Best when running a multi-week search.
 - Multi-lens transcript analysis with decision tree triage
 - Pattern and trend tracking with self-assessment calibration
 - Differentiation coaching integrated into all workflows
-- Full mock interview simulations
+- Full mock interview simulations (behavioral, system design, case study, panel, technical+behavioral mix)
+- Drill progression with gating thresholds (8 stages + standalone retrieval)
+- Post-interview debrief and rapid capture
 - Outcome tracking (correlate practice with real results)
+- Interview loop awareness across company rounds
 - Post-offer negotiation coaching
-- Drill progression with gating thresholds
+- Post-search retrospective and archiving
 
 Choose during `kickoff`. You can switch later.
 
@@ -225,9 +258,9 @@ Choose during `kickoff`. You can switch later.
 
 ```text
 interview-coach-skill/
-├── SKILL.md                            # Core skill — copy to CLAUDE.md to activate
+├── SKILL.md                            # Core skill — rename to CLAUDE.md to activate
 ├── README.md                           # This file
-├── coaching_state.md                   # Created on first kickoff (persistent memory)
+├── coaching_state.md                   # Created on first kickoff (persistent memory, auto-saved)
 └── references/
     ├── workflows.md                    # All command workflows, schemas, and cross-cutting modules
     ├── rubrics-detailed.md             # Scoring anchors, root causes, seniority calibration
@@ -249,6 +282,7 @@ interview-coach-skill/
 5. Run `progress` weekly — it tracks your self-assessment accuracy, not just scores.
 6. After real interviews, log outcomes. The system correlates practice scores with real results.
 7. Run `mock` before important interviews. Individual drills build skills; mocks test the full arc.
+8. Use `debrief` the same day as a real interview — capture signals while they're fresh.
 
 ---
 
@@ -261,13 +295,10 @@ No. Core workflows are role-agnostic; role drills include PM, Engineering, Desig
 Yes, but it is authored for Claude skill behavior. If using another model, copy `SKILL.md` and adapt as needed.
 
 **Why is the feedback direct?**
-The skill is intentionally high-candor and evidence-based. It still uses strengths-first delivery and self-reflection before critique. It also periodically checks whether the coaching is landing and adapts if not.
+The skill is intentionally high-candor and evidence-based. It uses strengths-first delivery and self-reflection before critique. It also periodically checks whether the coaching is landing and adapts if not. You can set your feedback directness level (1-5) during kickoff.
 
 **How does it work across multiple sessions?**
-The skill writes a `coaching_state.md` file that tracks your storybank, scores, patterns, drill progression, interview outcomes, and more. At the start of each session, it reads this file and picks up where you left off. Automatic in any environment with file system access (Claude Code, Cursor, etc.).
-
-**What's different about v5?**
-v5 is a ground-up rethink. Session continuity via COACHING_STATE, adaptive triage with priority-stacked decision trees, 5-dimension scoring (with Differentiation), root cause diagnosis, worked examples as calibration anchors, answer rewrites showing concrete deltas, full mock interviews with named interviewer personas, drill progression with gating, post-offer negotiation, self-assessment calibration, outcome tracking, time-aware coaching, interview loop awareness, psychological readiness, signal-reading, gap-handling, cultural/linguistic awareness, and anti-pattern detection. The core shift: from "structured output" to "adaptive coaching that works over months."
+The skill writes a `coaching_state.md` file that tracks your storybank, scores, patterns, drill progression, interview outcomes, interview loops, and more. At the start of each session, it reads this file and picks up where you left off. Saves happen automatically after every major workflow — not just at session end.
 
 ---
 
