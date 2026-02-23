@@ -309,9 +309,9 @@ These drills simulate the scrutiny candidates face from specialists in their fie
 
 ## Technical Communication Drills
 
-These drills target the communication skills needed for system design, case study, and mixed-format interviews. They are **not domain-specific technical practice** — they coach how you communicate technical thinking, not what you know. Use alongside the Format Discovery Protocol and Technical Format Coaching Boundaries defined in `references/workflows.md`.
+These drills target the communication skills needed for system design, case study, and mixed-format interviews. They are **not domain-specific technical practice** — they coach how you communicate technical thinking, not what you know. Use alongside the Format Discovery Protocol and Technical Format Coaching Boundaries defined in `references/commands/prep.md`.
 
-See `references/workflows.md` for the `practice technical` menu entry and progression ladder placement.
+See `references/commands/practice.md` for the `practice technical` menu entry and progression ladder placement.
 
 ### Thinking Out Loud Drill
 
