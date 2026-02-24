@@ -157,7 +157,7 @@ ANTI-PATTERNS DETECTED:
 [List from Step 2.5 scan with Q# references]
 
 FINAL OUTPUT:
-- Overall impression: Strong Hire / Hire / Mixed / No Hire
+- Hire Signal: Strong Hire / Hire / Mixed / No Hire
 - 3 strongest answers (why they worked)
 - 3 weakest answers (specific gaps + root cause patterns)
 - Biggest concern about this candidate

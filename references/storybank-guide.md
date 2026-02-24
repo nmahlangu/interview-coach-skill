@@ -85,7 +85,7 @@ Create the table entry for each story. Be honest about strength scores:
 - **4**: Strong with good evidence, minor gaps
 - **3**: Solid but generic—others could tell similar stories
 - **2**: Thin evidence or weak outcome
-- **1**: Barely usable—retire candidate
+- **1**: Barely usable—retirement candidate
 
 ### Step 4: Gap Analysis
 

@@ -93,7 +93,7 @@ When rewriting:
 
 ## Triage Decision
 - Primary bottleneck dimension:
-- Coaching path chosen: [see decision tree below]
+- Coaching path chosen: [specific path based on bottleneck analysis]
 
 ## What Is Working
 1.

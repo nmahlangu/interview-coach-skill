@@ -41,7 +41,7 @@ When the user types `help`, generate a context-aware command guide — not just 
 | Command | What It Does |
 |---|---|
 | `practice` | Drill menu with 8 gated stages + standalone retrieval. Sub-commands: `ladder` (constraint drills), `pushback` (handle skepticism), `pivot` (redirect), `gap` (no-example moments), `role` (specialist scrutiny), `panel` (multiple personas), `stress` (high-pressure), `technical` (system design communication). Standalone: `retrieval` (rapid-fire story matching). Includes interviewer's perspective on every round. |
-| `mock [format]` | Full 4-6 question simulated interview with holistic arc feedback and interviewer's inner monologue. Formats: `behavioral`, `system design`, `case study`, `panel`, `technical+behavioral mix` |
+| `mock [format]` | Full 4-6 question simulated interview with holistic arc feedback and interviewer's inner monologue. Formats: `behavioral screen`, `deep behavioral`, `panel`, `bar raiser`, `system design/case study`, `technical+behavioral mix` |
 
 ### Analysis and Scoring
 | Command | What It Does |
