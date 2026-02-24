@@ -1,8 +1,8 @@
 # Interview Coach
 
-A Claude skill that coaches you through your entire job search — from first resume review to post-offer negotiation. It scores your answers across five dimensions, diagnoses root causes behind weak spots, builds a storybank you can retrieve under pressure, and adapts its coaching to your specific patterns. Not a generic question bank. An adaptive system that gets sharper the more you use it.
+A Claude Code-based interview coach that guides you through your entire job search — from first resume review to post-offer negotiation. It scores your answers across five dimensions, diagnoses root causes behind weak spots, builds a storybank you can retrieve under pressure, and adapts its coaching to your specific patterns. Not a generic question bank. An adaptive system that gets sharper the more you use it.
 
-Say `kickoff`, share your resume, and you're coaching in under 2 minutes.
+Say `kickoff`, share your resume, and you're being coached in under 2 minutes.
 
 ---
 
@@ -41,10 +41,10 @@ cd interview-coach-skill
 
 Or [download it as a ZIP](https://github.com/noamseg/interview-coach-skill/archive/refs/heads/main.zip) and unzip.
 
-2. Rename the skill file so Claude Code auto-loads it:
+2. Activate the coach by renaming the skill file:
 
 ```bash
-cp SKILL.md CLAUDE.md
+mv SKILL.md CLAUDE.md
 ```
 
 3. Open the folder in Claude Code on Desktop and say `kickoff`.
@@ -52,13 +52,6 @@ cp SKILL.md CLAUDE.md
 The coach will ask for your resume, target role, and timeline — then build your profile, assess your starting point, and give you a prioritized action plan. Everything saves automatically to `coaching_state.md` so you pick up where you left off next session.
 
 **Also works with**: Claude Code (terminal), Cursor, or any environment with file system access.
-
-### Option 2: Paste into conversation (limited)
-
-1. Copy the contents of `SKILL.md` and paste at the start of a Claude conversation.
-2. Say `kickoff`.
-
-Note: Without file system access, the skill cannot read reference files or write persistent state. It will still work for single-session use but with reduced depth.
 
 ---
 
