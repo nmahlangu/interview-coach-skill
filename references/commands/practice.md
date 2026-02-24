@@ -98,11 +98,26 @@ The first round of every practice session is explicitly **unscored**. Its purpos
 - Coach scored: __
 - Calibration gap (if any):
 
+## Interviewer's Read
+[1-2 key moments from this round, told from the interviewer's perspective]
+
 ## Next Round Adjustment
 - Try this single change:
 
 **Next commands**: `practice [next drill]`, `stories`, `mock [format]`, `progress`
 ```
+
+#### Interviewer's Read — How To Write It
+
+Keep it to 1-2 moments per round — practice rounds are short, so be selective. Pick the moments with the highest teaching value.
+
+**Always include at least one positive moment** — what would have genuinely impressed an interviewer, and why. Candidates need to know what's working, not just what's failing.
+
+**Ground in the candidate's actual words.** Quote what they said, then show the evaluative reaction:
+- "When you said '[specific quote],' an interviewer would be thinking: [reaction]."
+- "The moment that landed strongest was when you [specific moment] — that's the kind of detail that makes an interviewer lean in."
+
+**Connect to the scoring.** The Interviewer's Read should make the scorecard *make sense*. If Structure scored a 2, the monologue should show what that felt like from the other side of the table: "I was 30 seconds in and still didn't know where this was going. That uncertainty is what a 2 on Structure feels like to an interviewer."
 
 ### Coaching State Integration
 

@@ -136,11 +136,8 @@ Record their responses and compare to your independent assessment in the debrief
 - Questions where interviewer moved on quickly (negative signal):
 - Questions where interviewer redirected (answer wasn't landing):
 
-## Interviewer Perspective (what I was thinking at key moments)
-Replay 3-4 key moments from the interviewer's point of view. This teaches candidates to read what's happening on the other side of the table:
-- "When you said [X], I was thinking [Y] — that's why I followed up with [Z]."
-- "On Q3, I moved on quickly because [reason] — a real interviewer would likely do the same."
-- "Your answer on Q5 made me want to hear more about [specific thing] — but you pivoted to [other thing] instead. That was a missed opportunity to go deeper on your strongest material."
+## Interviewer's Inner Monologue
+[Replay key moments from the interviewer's real-time perspective — what they were thinking, feeling, and evaluating as the candidate spoke. Include both positive and negative reactions.]
 
 ## Format-Specific Debrief (include when applicable)
 
@@ -173,3 +170,19 @@ After the mock debrief:
 1. **Add scores to Score History** — Type: mock. Include the Hire Signal.
 2. **Record self-assessment delta** — Self-Δ: over/under/accurate based on the pre-debrief self-assessment.
 3. **Update Active Coaching Strategy** if the mock reveals new patterns or confirms/contradicts the current strategy. Preserve Previous approaches when updating — move the old approach there before writing the new one.
+
+### Interviewer's Inner Monologue — How To Write It
+
+The monologue is the most powerful teaching tool in the debrief. It shows the candidate what they can't normally see — the evaluative reactions happening in real time on the other side of the table.
+
+**Ground every beat in the candidate's actual words.** Don't write generic reactions. Quote what they said, then show the reaction:
+- "When you said 'we decided to pivot the strategy,' my first thought was: who is 'we'? Did you drive this or observe it? I'd follow up to find out."
+- "The moment you said 'we reduced churn by 40%' — that's the first concrete number in four answers. My confidence in everything you've told me just went up."
+
+**Include both positive and negative reactions.** The monologue isn't just a critique. Show what impressed, what created doubt, and what made the interviewer want to hear more.
+
+**Show the pivot points** — the specific moments where the interviewer's overall impression shifted. "Up until Q3, I was leaning Hire. Then your answer on the conflict question felt rehearsed — you described the situation but never named what was actually hard about it. That's when I started wondering if the rest of your stories were also surface-level."
+
+**Connect to signal-reading.** The monologue should explain the interviewer behaviors the candidate would have seen: "This is why I followed up on Q2 — I was genuinely curious, that's a positive signal. And why I moved on quickly from Q4 — I'd already made my assessment and it wasn't favorable."
+
+**Calibrate to the mock format.** A startup CEO's inner monologue sounds different from a FAANG bar raiser's. Match the evaluative lens to the company and role context.

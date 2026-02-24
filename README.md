@@ -12,9 +12,9 @@ Say `kickoff`, share your resume, and you're coaching in under 2 minutes.
 
 **Adaptive coaching** — After scoring, a decision tree triages your bottleneck and branches to the right drill. If Relevance is your gap, you get question-decoding practice. If Substance, you build raw material. The system doesn't cycle through the same sequence for every candidate.
 
-**Storybank** — Structured story management with full STAR text, earned secrets, strength ratings, and rapid-retrieval drills so you can access the right story under time pressure.
+**Storybank** — Structured story management with full STAR text, earned secrets, strength ratings, and rapid-retrieval drills so you can access the right story under time pressure. Narrative identity extraction finds the 2-3 core themes across your stories so every answer reinforces a coherent thesis about who you are.
 
-**Practice and mocks** — 8-stage drill progression (constraint ladders, pushback handling, pivot drills, panel simulations, stress tests) plus full 4-6 question mock interviews in behavioral, system design, case study, panel, and technical+behavioral formats.
+**Practice and mocks** — 8-stage drill progression (constraint ladders, pushback handling, pivot drills, panel simulations, stress tests) plus full 4-6 question mock interviews in behavioral, system design, case study, panel, and technical+behavioral formats. Every round includes the interviewer's perspective — what they were actually thinking when you spoke.
 
 **Interview lifecycle** — Company research, role-specific prep briefs with interviewer intelligence, same-day post-interview debrief, outcome tracking that correlates practice scores with real results, and post-offer negotiation coaching with exact scripts.
 

@@ -12,6 +12,7 @@ Storybank Menu
 4) Find gaps
 5) Retire/archive
 6) Drill — rapid-fire retrieval practice
+7) Narrative identity — extract your career themes and see how stories connect
 ```
 
 ### Adding Stories — Guided Discovery
@@ -84,6 +85,46 @@ When adding or improving stories, force specificity on:
 ### Rapid-Retrieval Drill (`stories drill`)
 
 See `references/storybank-guide.md` (Rapid-Retrieval Drill section) for the full protocol, scoring criteria, and progression rounds. In brief: 10 rapid-fire questions, 10 seconds each, candidate responds with story ID + opening line. Debrief focuses on retrieval gaps and hesitation patterns. Also available via `practice retrieval`.
+
+### Narrative Identity — Theme Extraction
+
+Requires 5+ stories in the storybank. If fewer exist, redirect: "Narrative identity works best with 5+ stories to find patterns across. You have [N]. Want to add a few more with `stories add` first?"
+
+#### Analysis Protocol
+
+1. Read every story's full STAR text, earned secret, and deploy use-case from `coaching_state.md`.
+2. Cluster stories by **underlying theme** — not surface skill. Surface skills are things like "leadership" or "communication." Themes are specific patterns like "building systems where none existed," "translating between worlds that don't naturally talk to each other," or "making unpopular bets that paid off." If the theme could describe a generic candidate, go deeper.
+3. Identify 2-3 dominant themes. Most candidates have 2. Three is rare and usually means one is weak.
+4. Name the **sharpest edge** — the theme that is most distinctive to this candidate, hardest to replicate, and most likely to make an interviewer remember them.
+5. Flag **orphan stories** — stories that don't connect to any theme. These dilute the narrative and may be retirement candidates.
+6. Flag **fragile themes** — themes with only 1 story supporting them. One story is an anecdote; two or more is a pattern.
+7. Connect to differentiation: themes ARE the candidate's earned perspective made visible across their career arc. A strong narrative identity is how a candidate scores 4-5 on Differentiation consistently — not by forcing earned secrets into individual answers, but by having every answer reinforce the same coherent thesis about who they are.
+
+#### Output Schema
+
+```markdown
+## Your Narrative Identity
+
+### Core Themes
+1. **[Theme]** — [one-line description of the pattern]. Stories: S###, S###, S###
+2. **[Theme]** — [one-line description]. Stories: S###, S###
+3. **[Theme]** — [one-line description]. Stories: S###
+
+### Your Sharpest Edge
+[Which theme is most distinctive to you — the one an interviewer would remember. How many of your stories currently leverage it vs. how many could. This is your highest-leverage positioning move.]
+
+### Theme Coverage
+- Stories reinforcing a theme: __ of __
+- Orphan stories (no clear theme connection): [list with S### IDs — consider retiring or reframing]
+- Fragile themes (only 1 story): [list — need reinforcement]
+
+### How To Use This
+- **In answers**: [Specific advice on connecting answers back to core themes without being heavy-handed]
+- **In questions you ask**: [How to ask questions that reinforce your themes]
+- **In positioning**: [How themes inform your "why this role / why this company" narrative]
+
+**Next commands**: `stories improve S###`, `stories add`, `practice`, `prep [company]`
+```
 
 ### Output Schema (per action)
 
